@@ -14,14 +14,15 @@ class ModItemGroups {
         Testingmod.logger.info("Registering items for {}", Testingmod.modid)
     }
 
-    private val TESTINGMOD_ITEMS = Registry.register(Registries.ITEM_GROUP,
-        Identifier.of(Testingmod.modid, "testingmod_items"),
-        FabricItemGroup.builder()
-            .displayName(Text.translatable("itemgroup.testingmod.testingmod_items"))
-            .icon { -> ItemStack(ModItems().HEALER) }
-            .entries { context, entries ->
-                entries.add(ModItems().HEALER)
-                entries.add(ModItems().KILLER)
-            }
-            .build())
+    val TESTINGMOD_ITEMS = Registry.register(
+            Registries.ITEM_GROUP,
+            Identifier.of(Testingmod.modid, "testingmod_items"),
+            FabricItemGroup.builder()
+                .displayName(Text.translatable("itemgroup.testingmod.testingmod_items"))
+                .icon { -> ItemStack(ModItems().HEALER) }
+                .entries { context, entries ->
+                    entries.add(ModItems().HEALER)
+                    entries.add(ModItems().KILLER)
+                }
+               .build())
 }
