@@ -11,6 +11,6 @@ object Testingmod : ModInitializer {
 
 	override fun onInitialize() {
 		ModItems().init()
-		// ModItemGroups().init()
+		ModItemGroups().init()
 	}
 }

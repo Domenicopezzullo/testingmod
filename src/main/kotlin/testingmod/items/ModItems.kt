@@ -27,9 +27,9 @@ class ModItems {
     }
     public fun init() {
         Testingmod.logger.info("Registering items for {}", Testingmod.modid)
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register { entries ->
-            entries.add(KILLER)
-            entries.add(HEALER)
-        }
+        // ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register { entries ->
+            // entries.add(KILLER)
+            // entries.add(HEALER)
+        // }
     }
 }
