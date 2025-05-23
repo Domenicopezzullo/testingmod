@@ -12,7 +12,7 @@ import testingmod.Testingmod
 import testingmod.items.custom.HealerItem
 import testingmod.items.custom.KillerItem
 
-class ModItems {
+object ModItems {
     val HEALER = registerItem("healer", HealerItem(Item.Settings()
         .maxDamage(40)
         .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Testingmod.modid, "healer")))

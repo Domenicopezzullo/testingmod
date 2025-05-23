@@ -8,7 +8,7 @@ import net.minecraft.text.Text
 import net.minecraft.util.Identifier
 import testingmod.Testingmod
 
-class ModItemGroups {
+object ModItemGroups {
 
     public fun init() {
         Testingmod.logger.info("Registering items for {}", Testingmod.modid)
@@ -19,10 +19,10 @@ class ModItemGroups {
             Identifier.of(Testingmod.modid, "testingmod_items"),
             FabricItemGroup.builder()
                 .displayName(Text.translatable("itemgroup.testingmod.testingmod_items"))
-                .icon { -> ItemStack(ModItems().HEALER) }
+                .icon { -> ItemStack(ModItems.HEALER) }
                 .entries { context, entries ->
-                    entries.add(ModItems().HEALER)
-                    entries.add(ModItems().KILLER)
+                    entries.add(ModItems.HEALER)
+                    entries.add(ModItems.KILLER)
                 }
                .build())
 }

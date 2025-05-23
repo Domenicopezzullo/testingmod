@@ -15,7 +15,7 @@ object Testingmod : ModInitializer {
 	public val modid = "testingmod"
 
 	override fun onInitialize() {
-		ModItems().init()
-		ModItemGroups().init()
+		ModItems.init()
+		ModItemGroups.init()
 	}
 }
