@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "combat",
+  "pattern": [
+    "PPP",
+    "PGP",
+    "PPP"
+  ],
+  "key": {
+    "G": "minecraft:golden_apple",
+    "P": "minecraft:paper"
+  },
+  "result": {
+    "id": "testingmod:killer"
+  }
+}
